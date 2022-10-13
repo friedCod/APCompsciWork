@@ -20,9 +20,7 @@ public static boolean monkeyTrouble(boolean aSmile, boolean bSmile){
 
 public static void main(String[] args){
   monkeyTroubleCheck(true, true, true);
-  monkeyTroubleCheck(true, true, false);
   monkeyTroubleCheck(false, false, true);
-  monkeyTroubleCheck(false, false, false);
 }
 
 }

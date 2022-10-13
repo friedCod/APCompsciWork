@@ -20,6 +20,6 @@ public static boolean loneTeen(int a, int b){
 
 public static void main(String[] args){
   loneTeenCheck(13, 99, true);
-  loneTeenCheck(13, 99, false);
+  loneTeenCheck(25,30, false);
  }
 }
