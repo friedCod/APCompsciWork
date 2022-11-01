@@ -2,6 +2,7 @@ class Reverse{
 
 public static void reverseTest(String str, String expected){
   String result = reverse(str);
+  System.out.println("input: " + str + " expected: " + expected);
   if(result.equals(expected))
     System.out.println("yay");
   else

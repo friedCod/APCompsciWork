@@ -2,6 +2,7 @@ class CountOccurrences{
 
 public static void countOccurrencesTest(String str, String sub, int expected){
   int result = countOccurrences(str, sub);
+  System.out.println("String: " + str + " Finding: " + sub + " Expected: " + expected);
   if(result == expected)
     System.out.println("yay");
   else

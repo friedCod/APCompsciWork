@@ -2,6 +2,7 @@ class SumOfSquares{
 
 public static void sumOfSquaresTest(int n, int expected){
   int result = sumOfSquares(n);
+  System.out.println("Input: " + n + " Expected: " + expected);
   if(result == expected)
     System.out.println("yay");
   else

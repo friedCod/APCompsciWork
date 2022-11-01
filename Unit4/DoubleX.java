@@ -2,6 +2,7 @@ class DoubleX{
 
 public static void doubleXTest(String str, boolean expected){
   boolean result = doubleX(str);
+  System.out.println("Input: " + str + " Expected: " + expected);
   if(result == expected)
     System.out.println("yay");
   else

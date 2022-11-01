@@ -2,6 +2,7 @@ class StringTimes{
 
 public static void stringTimesCheck(String str, int n, String expected){
   String result = stringTimes(str, n);
+  System.out.println("String: " + str " Number: " + n + "Expected: " + expected);
   if(result.equals(expected))
     System.out.println("yay");
   else

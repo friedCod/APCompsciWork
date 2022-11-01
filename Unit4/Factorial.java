@@ -2,6 +2,7 @@ class Factorial{
 
 public static void factorialTest(int n, int expected){
   int result = factorial(n);
+  System.out.println("Input: " + n + " Expected: " + expected);
   if(result == expected)
     System.out.println("yay");
   else
