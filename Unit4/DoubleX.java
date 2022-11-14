@@ -1,4 +1,4 @@
-class DoubleX{
+   class DoubleX{
 
 public static void doubleXTest(String str, boolean expected){
   boolean result = doubleX(str);
