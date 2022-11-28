@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 class MagicEightBall{
 
 private String messageOne = "Yes";
