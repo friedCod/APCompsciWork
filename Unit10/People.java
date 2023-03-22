@@ -1,9 +1,9 @@
-class Person{
+class People{
 
   private String name;
   private int pets;
 
-  public Person(String name, int pets){
+  public People(String name, int pets){
     this.name = name;
     this.pets = pets;
   }

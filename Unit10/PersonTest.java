@@ -1,13 +1,13 @@
 import java.util.*;
 
-class PersonTest{
+class PeopleTest{
 
-  public static void TestAverage(ArrayList<Person> persons, double expected){
-    double result = PetsAverage(persons);
+  public static void TestAverage(ArrayList<People> peoples, double expected){
+    double result = PetsAverage(peoples);
 
     System.out.println("Number of everyone's pets:");
 
-    for(Person p : persons){
+    for(People p : peoples){
       System.out.println(p.getPets());
     }
 
@@ -21,12 +21,12 @@ class PersonTest{
     }
   }
 
-  public static void TestMostPets(ArrayList<Person> persons, String expected){
-    String result = MostPets(persons);
+  public static void TestMostPets(ArrayList<People> peoples, String expected){
+    String result = MostPets(peoples);
 
     System.out.println("Number of everyone's pets:");
 
-    for(Person p : persons){
+    for(People p : peoples){
       System.out.println(p.getPets());
     }
 
@@ -40,9 +40,9 @@ class PersonTest{
     }
   }
 
-  public static void PersonInfo(ArrayList<Person> persons){
+  public static void PeopleInfo(ArrayList<People> peoples){
 
-    for(Person p : persons){
+    for(People p : peoples){
       System.out.println("Person name:");
       System.out.println(p.Name());
       System.out.println("Person number of pets:");
@@ -51,19 +51,19 @@ class PersonTest{
     }
   }
 
-  public static double PetsAverage(ArrayList<Person> persons){
+  public static double PetsAverage(ArrayList<People> peoples){
     double sum = 0;
 
-    for(Person p : persons){
+    for(People p : peoples){
       sum += p.getPets();
     }
-    return sum/persons.size();
+    return sum/peoples.size();
   }
 
-  public static String MostPets(ArrayList <Person> persons){
-    Person result = new Person("a", 0);
+  public static String MostPets(ArrayList <People> peoples){
+    People result = new People("a", 0);
 
-    for(Person p : persons){
+    for(People p : peoples){
       if(result.getPets() < p.getPets()){
         result = p;
       }
@@ -72,11 +72,11 @@ class PersonTest{
 
   }
 
-  public static ArrayList<Person> ManyPets(ArrayList <Person> persons){
+  public static ArrayList<People> ManyPets(ArrayList <People> peoples){
 
-    ArrayList<Person> result = new ArrayList<Person>();
+    ArrayList<People> result = new ArrayList<People>();
 
-    for(Person p : persons){
+    for(People p : peoples){
       if(p.getPets() >= 2){
         result.add(p);
       }
@@ -86,39 +86,35 @@ class PersonTest{
 
   public static void main(String[] args){
     //arraylist
-    ArrayList<Person> persons = new ArrayList<Person>();
-    persons.add(new Person("Andrew", 0));
-    persons.add(new Person("Zach", 1));
-    persons.add(new Person("Lilly", 3));
+    ArrayList<People> peoples = new ArrayList<People>();
+    peoples.add(new People("Andrew", 0));
+    peoples.add(new People("Zach", 1));
+    peoples.add(new People("Lilly", 3));
     //functions
     //info function
-    PersonInfo(persons);
+    PeopleInfo(peoples);
     //pets average
     System.out.println();
-    System.out.println("Average number of pets: " + PetsAverage(persons));
+    System.out.println("Average number of pets: " + PetsAverage(peoples));
     //most pets
     System.out.println();
-    System.out.println("Person with most pets: " + MostPets(persons));
+    System.out.println("Person with most pets: " + MostPets(peoples));
     //many pets
-    ArrayList<Person> result = ManyPets(persons);
+    ArrayList<People> result = ManyPets(peoples);
 
     System.out.println();
     System.out.println("People with 2 or more pets: ");
-    for(Person p : result){
+    for(People p : result){
       System.out.println(p.Name());
     }
     //test functions
     //average test
     System.out.println();
     System.out.println("Test Average:");
-    TestAverage(persons, 1.3333333333333333);
+    TestAverage(peoples, 1.3333333333333333);
     //most pets test
     System.out.println();
     System.out.println("Test most pets:");
-    TestMostPets(persons, "Lilly");
-    //many pets test
-    System.out.println();
-    System.out.println("Test many tests:");
-    TestMostPets(persons, );
+    TestMostPets(peoples, "Lilly");
   }
 }

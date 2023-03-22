@@ -48,6 +48,17 @@ public ShapeCollection{
 
   public static void main(String[] args){
 
+    ArrayList<Shape> shapes = new ArrayList<Shape>();
+
+    Shape shape1 = new Shape("Square", 4);
+    Shape shape2 = new Shape("Triangle", 3);
+    Shape shape3 = new Shape("Circle", 0);
+    Shape shape4 = new Shape("Dodecagon", 12);
+
+    
+
+
+    System.out.println("average sides: " + )
 
 
   }
