@@ -1,7 +1,11 @@
 import java.util.*;
-public ShapeCollection{
+public class ShapeCollection{
 
-  private ArrayList<Shape> shapes = new ArrayList<Shape>();
+  private ArrayList<Shape> shapes;
+
+  public ShapeCollection(){
+    shapes = new ArrayList<Shape>();
+  }
 
   public void addShape(Shape s){
     shapes.add(s);
@@ -37,7 +41,7 @@ public ShapeCollection{
     ArrayList<Shape> result = new ArrayList<Shape>();
 
     for(Shape shape : shapes){
-      if(shape.getSides()%2 = 0){
+      if(shape.getSides()%2 == 0){
         result.add(shape);
       }
     }
@@ -54,11 +58,21 @@ public ShapeCollection{
     Shape shape2 = new Shape("Triangle", 3);
     Shape shape3 = new Shape("Circle", 0);
     Shape shape4 = new Shape("Dodecagon", 12);
+    ShapeCollection collection = new ShapeCollection();
 
-    
+    collection.addShape(shape1);
+    collection.addShape(shape2);
+    collection.addShape(shape3);
+    collection.addShape(shape4);
+
+    System.out.println("Average number of sides: " + collection.averageSides());
+    System.out.println("Shapes with even sides:" );
+
+    for(Shape e: collection.evenSides()){
+      System.out.print(e.getName() + " ");
+    }
 
 
-    System.out.println("average sides: " + )
 
 
   }

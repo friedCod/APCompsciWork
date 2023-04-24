@@ -75,11 +75,15 @@ public class AcademicClass{
 
     System.out.println();
 
+    System.out.println("Students with fav # as 7:");
+
     for(String n: apcs.favoriteNumber(7)){
       System.out.print(n + " ");
     }
 
     System.out.println();
+
+    System.out.println("Students with fav # as an odd #:");
 
     for(String o: apcs.oddFavorite()){
       System.out.print(o + " ");

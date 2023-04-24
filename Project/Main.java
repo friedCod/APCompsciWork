@@ -2,9 +2,6 @@ import processing.core.*;
 
 public class Main extends PApplet{
 
-  Character c = new Character(this);
-
-
   public void settings(){
    size(400,400);
   }
@@ -14,6 +11,9 @@ public class Main extends PApplet{
     rectMode(CENTER);
 
   }
+
+  Character c = new Character(this);
+
 
   public void draw(){
 

@@ -13,7 +13,7 @@ public class Character{
   Character(PApplet p){
 
     this.p = p;
-    position = new PVector(p.width/4, p.height - p.height/5);
+    position = new PVector(p.height/2, p.width/2);
     velocity = new PVector(0,0);
     acceleration = new PVector(0,0);
     topSpeed = 10;
