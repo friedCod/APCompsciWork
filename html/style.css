@@ -1,0 +1,12 @@
+body{
+    background-color: #dddddd;
+}
+
+b{
+  color: red;
+}
+
+p.special {
+  background-color: white;
+  font-family: Arial;
+}
